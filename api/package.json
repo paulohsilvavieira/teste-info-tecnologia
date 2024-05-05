@@ -1,0 +1,23 @@
+{
+  "name": "test-info-tec",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch ./src/index.js",
+    "test": "NODE_ENV=test mocha ./tests/**/*.spec.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "eslint": "^9.2.0",
+    "mocha": "^10.4.0",
+    "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

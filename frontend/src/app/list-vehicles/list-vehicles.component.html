@@ -1,0 +1,34 @@
+<div class="border border-purple-400 bg-purple-500 mb-10  ">
+  <h1 class="text-3xl py-6 text-center text-white font-semibold ">
+    Veiculos cadastrados
+  </h1>
+</div>
+<div class="flex flex-row justify-center itens-center text-base text-left">
+<table class="table-fixed">
+  <thead>
+    <tr class="border rounded-md" >
+      <th class="border  border-purple-500 px-5 bg-purple-500 text-white">ID</th>
+      <th  class="border border-purple-500 px-5 bg-purple-500 text-white">Placa</th>
+      <th  class="border border-purple-500 px-5 bg-purple-500 text-white">Chassi</th>
+      <th  class="border border-purple-500 px-5 bg-purple-500 text-white">Renavam</th>
+      <th  class="border border-purple-500 px-5  bg-purple-500 text-white">Modelo</th>
+      <th  class="border border-purple-500 px-5  bg-purple-500 text-white">Marca</th>
+      <th  class="border border-purple-500  px-5 bg-purple-500 text-white">Ano</th>
+    </tr>
+  </thead>
+  <tbody>
+   
+    <tr *ngFor="let vehicle of vehicles" class="border border-purple-500">
+      <td class="px-5" >{{vehicle.id}}</td>
+      <td class="px-5">{{vehicle.placa}}</td>
+      <td class="px-5">{{vehicle.chassi}}</td>
+      <td class="px-5">{{vehicle.renavam}}</td>
+      <td class="px-5">{{vehicle.modelo}}</td>
+      <td class="px-5">{{vehicle.marca}}</td>
+      <td class="px-5">{{vehicle.ano}}</td>
+
+    </tr>
+  </tbody>
+
+</table>
+</div>

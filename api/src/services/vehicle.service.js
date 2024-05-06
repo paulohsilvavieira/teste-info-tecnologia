@@ -21,8 +21,8 @@ export class VehicleService {
     if (!this.#repository.get(vehicleId)) {
       return false
     }
-    return this.#repository.delete(vehicleId)
-
+    const result = this.#repository.delete(vehicleId)
+    return result
   }
 
   getAll = () => {

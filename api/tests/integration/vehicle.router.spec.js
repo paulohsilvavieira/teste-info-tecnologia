@@ -162,7 +162,15 @@ describe('Vehicle Router', () => {
       })
       const { body: vehicle } = await request.get(`/vehicles/${body.vehicleId}`)
       expect(response.status).to.eql(204);
-      expect(vehicle.marca).to.eql('Ferrari')
+      expect(vehicle).to.eql({
+        "placa": "1234567",
+        "chassi": "1234567",
+        "renavam": "1234567",
+        "modelo": "Gallardo",
+        "marca": "Ferrari",
+        "ano": 2025,
+        "id": body.vehicleId
+      })
     })
   });
 
